@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pop-Up Login & Sign Up Page</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="tabs">
+        <div class="tab active" id="signupTab">Sign Up</div>
+        <div class="tab" id="loginTab">Login</div>
+      </div>
+      <div class="container">
+        <div class="form" id="loginForm">
+          <h1>Login with an existing account:</h1>
+          <form method="post" action="/wp-login.php">
+            <input
+              type="text"
+              name="log"
+              placeholder="Username or Email"
+              required
+            />
+            <input type="password" name="pwd" placeholder="Password" required />
+            <input type="hidden" name="redirect_to" value="/" />
+            <button type="submit">Login</button>
+          </form>
+          <div class="social-buttons">
+            <div class="facebook">
+              <img
+                class="facebook-img"
+                src="https://i.ibb.co/QFF50FB/Facebook-Logo-2019.png"
+                alt="Facebook"
+              />
+            </div>
+            <div class="google">
+              <img
+                class="google-img"
+                src="https://i.ibb.co/wQ1gRbS/pngwing-com.png"
+                alt="Google"
+              />
+            </div>
+            <div class="paypal">
+              <img
+                class="paypal-img"
+                src="https://i.ibb.co/71bszXH/pngwing-com-1.png"
+                alt="PayPal"
+              />
+            </div>
+          </div>
+
+          <div class="forgot">
+            <a href="/wp-login.php?action=lostpassword"
+              >Forgot your password?</a
+            >
+          </div>
+        </div>
+        <div class="form active" id="signupForm">
+          <h1>Your free casino</h1>
+          <p>Select your player name:</p>
+          <input type="text" placeholder="Player name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <label
+            ><input type="checkbox" required /> I am at least 18 years of
+            age.</label
+          >
+          <label
+            ><input type="checkbox" /> Yes, I would like to receive your
+            newsletter, which regularly features offers, information, and free
+            Chips.</label
+          >
+          <label
+            ><input type="checkbox" required /> I have read and accept both the
+            <a
+              href="https://playspingames.com/terms-conditions/"
+              target="_blank"
+              >GTC</a
+            >
+            and
+            <a
+              href="https://playspingames.com/privacy-statement/"
+              target="_blank"
+              >Privacy Statement</a
+            >.</label
+          >
+          <button>Register for free</button>
+          <div class="social-buttons">
+            <div class="facebook">
+              <img
+                class="facebook-img"
+                src="https://i.ibb.co/QFF50FB/Facebook-Logo-2019.png"
+                alt="Facebook"
+              />
+            </div>
+            <div class="google">
+              <img
+                class="google-img"
+                src="https://i.ibb.co/wQ1gRbS/pngwing-com.png"
+                alt="Google"
+              />
+            </div>
+            <div class="paypal">
+              <img
+                class="paypal-img"
+                src="https://i.ibb.co/71bszXH/pngwing-com-1.png"
+                alt="PayPal"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

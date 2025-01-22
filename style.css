@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0e44;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  height: 700px; /* Set card height */
+  width: 350px; /* Set card width */
+  background-color: #0b0e44; /* Card background color */
+  color: #333; /* Card text color */
+  border-radius: 15px; /* Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
+  padding: 20px; /* Add some inner spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center card content */
+  align-items: center; /* Horizontally center card content */
+}
+
+.container {
+  width: 100%;
+  border: 2px solid red;
+  border-radius: 10px;
+  background: #080f57;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 550px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  background: #080f57;
+  border-radius: 10px 10px 0 0;
+  color: white;
+}
+
+.tab.active {
+  background: #080f57;
+  font-weight: bold;
+  border: 2px solid red;
+  border-bottom: none;
+}
+
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+.form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form button {
+  width: 100%;
+  /* padding: 10px; */
+  background: #34a531;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.form button:hover {
+  background: darkgreen;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-around; /* Space buttons evenly */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-buttons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px; /* Ensure square dimensions for consistency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.form a {
+  color: red;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.forgot {
+  margin-top: 20px;
+}
